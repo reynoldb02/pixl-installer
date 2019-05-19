@@ -12,7 +12,7 @@ return function(base)
             local obj = { }
             setmetatable(obj, c)
             if class_tbl.init then
-                class.tbl.init(obj, ...)
+                class_tbl.init(obj, ...)
             else
                 if base and base.init then
                     base.init(obj, ...)
